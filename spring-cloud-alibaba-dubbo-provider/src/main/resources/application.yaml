@@ -1,0 +1,13 @@
+dubbo:
+  scan:
+    base-packages: com.haigeek.provider.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    #   The Spring Cloud Dubbo's registry extension
+#    address: spring-cloud://localhost
+    address: nacos://127.0.0.1:8848
+#   The traditional Dubbo's registry
+#   address: zookeeper://127.0.0.1:2181
